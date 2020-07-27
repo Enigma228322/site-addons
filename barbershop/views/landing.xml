@@ -11,10 +11,28 @@
     <template id="Main">
         <t t-call="website.layout">
             <div class="main-shit">
-                <!-- <img class="logo" src="/barbershop/static/src/img/NR.png" draggable="false"/> -->
+                <div class="signboard">
+                    <div class="logo-description">Мужская Парикмахерская в Баймаке</div>
+                    <img class="logo" src="/barbershop/static/src/img/NR.png" draggable="false"/>
+                </div>
                 <img class="back-gif" src="/barbershop/static/src/img/cat.gif" draggable="false"/>
-                <div class="center-content">
-                    <h2>На рахате!</h2>
+                <div class="info">
+                    <div class="media">
+                        <div class="btn btn-sm btn-link inline col-3" href="https://www.instagram.com/na_raxate_barbershop/">
+                            <img class="social-media-icon" src="/barbershop/static/src/img/instagram.png"/>
+                        </div>
+                        <div class="btn btn-sm btn-link inline col-3" href="https://t.me/welldone228">
+                            <img class="social-media-icon" src="/barbershop/static/src/img/telegram.png"/>
+                        </div>
+                        <div class="btn btn-sm btn-link inline col-3" href="https://vk.com/raxatt">
+                            <img class="social-media-icon" src="/barbershop/static/src/img/vk.png"/>
+                        </div>
+                    </div>
+                    <div class="text-info border-left-0">
+                        <div class="number">Цифры: <a href="#">+79674513706</a></div>
+                        <div class="mail">Почта: <a href="#">chigomus@mail.ru</a></div>
+                        <div class="сhief">Главный бригадир: Чингиз Мустаев</div>
+                    </div>
                 </div>
             </div>
         </t>
