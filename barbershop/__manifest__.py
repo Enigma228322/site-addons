@@ -1,4 +1,4 @@
-# Copyright 2020 Vildan Safin <https://www.it-projects.info/team/Enigma228322>
+# Copyright 2020 Vildan Safin <https://github.com/Enigma228322>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 {
@@ -21,7 +21,7 @@
     "external_dependencies": {"python": [], "bin": []},
     "data": [
         'views/landing.xml',
-        'views/assets.xml',
+        'views/assets.xml'
     ],
     "demo": [
     ],
