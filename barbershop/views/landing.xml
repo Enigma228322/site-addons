@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 2020 Vildan Safin <https://www.it-projects.info/team/Enigma228322>
+    License AGPL-3.0 (https://www.gnu.org/licenses/lgpl.html).-->
+<odoo>
+    <template id="Main">
+        <t t-name="hat">
+            <div class="main-shit">
+                <div class="top-hat">
+                    <h2>На рахате!</h2>
+                </div>
+                <div class="bot-hat">
+                </div>
+            </div>
+        </t>
+        <t t-call="hat"/>
+        asdasd
+    </template>
+</odoo>
