@@ -19,6 +19,9 @@
     padding-right: 0;
     padding-left: 0;
 }
+
+.online-record{
+}
 //---------------------------------------------------------------
 // ----------------------- Signboard ----------------------------
 .signboard{
@@ -55,7 +58,7 @@
     left: 37%;
 }
 //---------------------------------------------------------------
-// ------------------------- JS -------------------------------
+// -------------------------- JS --------------------------------
 .hid{
     display: none;
 }
@@ -77,6 +80,11 @@
     transition-timing-function: linear;
 }
 
+.tansit-02{
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
 .opacity-0{
     opacity: 0;
 }
@@ -91,5 +99,95 @@
     transition-duration: 0.2s;
     transition-timing-function: linear;
     transform: translateY(4px);
+}
+
+.up-70{
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transform: translateY(-70%);
+}
+//---------------------------------------------------------------
+// ------------------------- Help -------------------------------
+.h-45px{
+    height: 45px !important;
+}
+
+.pd-top-15{
+    padding-top: 15px;
+}
+//---------------------------------------------------------------
+// ------------------------ Mobile ------------------------------
+@media (max-width: 799px) {
+    // ----------------------- Block division -----------------------
+    .main-shit{
+        position: absolute;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .main-content-left{
+        padding-right: 0;
+        padding-left: 0;
+        background-color: #9696c7;
+    }
+
+    .big-button-right{
+        background-color: #9696c7;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    //---------------------------------------------------------------
+    // ----------------- Register block or space --------------------
+    .space{
+        display: flex;
+    }
+    
+    @keyframes go-left-right {   /* назовём анимацию: "go-left-right" */
+        from {
+          left: 0px;               /* от: left: 0px */
+        }
+        to {
+          left: calc(29%);
+        }
+    }
+
+    .registration-icon{
+        animation: go-left-right 3s;
+        left: 29%;
+    }
+    //---------------------------------------------------------------
+    // ------------------------- Logo -------------------------------
+
+    @keyframes appearence {   /* назовём анимацию: "go-left-right" */
+        from {
+            opacity: 0;               /* от: left: 0px */
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .logo{
+        animation: appearence 5s;
+        opacity: 1;
+    }
+    //---------------------------------------------------------------
+    // ------------------------- Record mobile -------------------------------
+    .footer{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .record-btn{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .sign-up{
+    }
+    //---------------------------------------------------------------
 }
 //---------------------------------------------------------------

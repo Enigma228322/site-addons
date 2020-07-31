@@ -1,21 +1,34 @@
 /* Copyright 2020 Vildan Safin <https://www.it-projects.info/team/Enigma228322>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).*/
- odoo.define('saas_apps.model', function (require) {
+ odoo.define('barbershop.model', function (require) {
     'use_strict';
 
-    $(document).ready(function() {
-        hover_effects($('.back-gif'));
-        hover_effects($('.telegram'));
-        hover_effects($('.instagram'));
-        hover_effects($('.vk'));
-        hover_effects($('.contact'));
-        setTimeout(load_elements, 1000);
+    var is_contacts_pressed = false;
 
+    $(document).ready(function() {
+        // Adapting the design
+        if($(window).width() < 800){
+            mobile_design();
+            open_service_form();
+            open_record_form();
+        }
+        else{
+            desctop_design();
+            setTimeout(load_elements, 1000);
+            hover_effects($('.back-gif'));
+            hover_effects($('.telegram'));
+            hover_effects($('.instagram'));
+            hover_effects($('.vk'));
+            hover_effects($('.contact'));
+        }
+
+        // Animation shit
         setTimeout(load_element, 2000, $('.instagram'));
         setTimeout(load_element, 2300, $('.telegram'));
         setTimeout(load_element, 2600, $('.vk'));
         setTimeout(load_element, 2900, $('.contact'));
         show_contacts();
+        show_online_record();
     });
 
     function hover_effects(elem){
@@ -44,7 +57,7 @@
         else{
             $(el).addClass('opacity-1');
         }
-        setTimeout(remove_transit, 1000, $(el));
+        setTimeout(remove_class, 1000, $(el), 'tansit-1');
     }
 
     function load_elements(){
@@ -56,17 +69,64 @@
             else{
                 $(this).addClass('opacity-1');
             }
-            setTimeout(remove_transit, 1000, $(this));
+            setTimeout(remove_class, 1000, $(this), 'tansit-1');
         });
     }
 
-    function remove_transit(el){
-        $(el).removeClass('tansit-1')
+    function show_contacts(){
+        $('.media').addClass('tansit-02');
+        $('.contact').click(function(){
+            if(!is_contacts_pressed){
+                $('.media').addClass('up-70');
+                $('.media').removeClass('h-100');
+                $('.text-info').removeClass('hid');
+                is_contacts_pressed = true;
+            }
+            else{
+                $('.media').removeClass('up-70');
+                $('.media').addClass('h-100');
+                $('.text-info').addClass('hid');
+                is_contacts_pressed = false;
+            }
+        });
     }
 
-    function show_contacts(){
-        $('.contact').click(function(){
+    function show_online_record(){
+        $('.back-gif').click(function(){
+            $('.big-button-right').addClass('tansit-1');
+            $('.online-record').addClass('tansit-1');
+            $('.big-button-right').addClass('opacity-0');
+            $('.big-button-right').addClass('hid');
+            $('.online-record').addClass('tansit-02');
+            $('.online-record').removeClass('hid');
+        });
+    }
 
+    function remove_class(el, custom_class){
+        $(el).removeClass(custom_class);
+    }
+
+    function mobile_design(){
+    }
+
+    function desctop_design(){
+        $('.registration-icon').remove();
+        $('.big-button-right').removeClass('hid');
+        $('.main-content-left').removeClass('col-12');
+        $('.main-content-left').addClass('col-4');
+    }
+
+    function open_record_form(){
+        $('.choose').click(function(){
+            $('.service-mobile').fadeOut("slow");
+            $('.online-record-mobile').fadeIn("slow");
+        });
+    }
+
+    function open_service_form(){
+        $('.registration-icon').click(function(){
+            $('.main-content-left').fadeOut("slow");
+            $('.service-mobile').fadeIn("slow");
         });
     }
 });

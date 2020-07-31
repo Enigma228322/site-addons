@@ -11,12 +11,14 @@
     <template id="Main">
         <t t-call="website.layout">
             <div class="main-shit">
-                <div class="main-content-left col-4">
+                <!-- Logo and info -->
+                <div class="main-content-left col-12">
                     <div class="signboard h-25 w-auto">
                         <!-- <div class="logo-description h-25 w-auto to-load">Мужская Парикмахерская в Баймаке</div> -->
                         <img class="logo w-100 to-load v-hid" src="/barbershop/static/src/img/NR.png" draggable="false"/>
                     </div>
-                    <div class="space w-100 h-50">
+                    <div class="space w-100 h-50 align-items-center">
+                        <img class="registration-icon w-50 h-50 col-6" src="/barbershop/static/src/img/register.png"/>
                     </div>
                     <div class="info h-25">
                         <div class="media w-100 h-100 row align-items-center">
@@ -41,8 +43,78 @@
                         </div>
                     </div>
                 </div>
-                <div class="big-button-right col-8">
+                <!-- Big gif -->
+                <div class="big-button-right col-8 hid">
                     <img class="back-gif h-100 w-100 to-load v-hid" src="/barbershop/static/src/img/cat.gif" draggable="false"/>
+                </div>
+                <!-- Registration page -->
+                <div class="online-record col-8 hid">
+                    <div class="footer h-25 border-bottom h-45px">
+                        <h2 class="label">Онлайн запись</h2>
+                    </div>
+                    <div class="main-record-place">
+                        <div class="input-group pd-top-15 col-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Введите имя и фамилию</span>
+                            </div>
+                            <input type="text" aria-label="First name" class="form-control"/>
+                            <input type="text" aria-label="Last name" class="form-control"/>
+                        </div>
+                        <div class="input-group mb-3 pd-top-15 col-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Введите номер телефона</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                        </div>
+                        <div class="input-group mb-3 col-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Введите дату и время</span>
+                            </div>
+                            <input type="text" placeholder="08 в 18:00" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                        </div>
+                        <button type="button" class="sign-up btn btn-secondary btn-lg">Записаться!</button>
+                    </div>
+                </div>
+                <!-- Registration page mobile -->
+                <div class="online-record-mobile col-12 hid">
+                    <div class="footer h-25 border-bottom h-45px">
+                        <h2 class="label">Онлайн запись</h2>
+                    </div>
+                    <div class="main-record-place">
+                        <div class="pd-top-15 col-12">
+                            <label for="first-last-name">Введите имя и фамилию:</label>
+                            <input type="text" aria-label="First name" class="form-control"/>
+                            <input type="text" aria-label="Last name" class="form-control"/>
+                        </div>
+                        <div class="pd-top-15 col-12">
+                            <label for="first-last-name">Введите номер телефона для связи:</label>
+                            <input type="text" aria-label="Number" class="form-control"/>
+                        </div>
+                        <div class="pd-top-15 col-12">
+                            <label for="first-last-name">Выберите дату посещения:</label>
+                            <input type="text" aria-label="Date" class="form-control"/>
+                        </div>
+                        <!-- <div class="input-group mb-3 pd-top-15 col-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Введите номер телефона</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                        </div>
+                        <div class="input-group mb-3 col-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Введите дату и время</span>
+                            </div>
+                            <input type="text" placeholder="08 в 18:00" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                        </div> -->
+                        <button type="button" class="sign-up record-btn btn btn-secondary btn-lg">Записаться!</button>
+                    </div>
+                </div>
+                <div class="service-mobile col-12 hid">
+                    <div class="service">
+                        <div class="service-img"/>
+                        <div class="service-description"/>
+                        <button type="button" class="choose record-btn btn btn-secondary btn-lg">Выбрать</button>
+                    </div>
                 </div>
             </div>
         </t>
