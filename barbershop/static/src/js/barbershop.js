@@ -20,6 +20,8 @@
             hover_effects($('.instagram'));
             hover_effects($('.vk'));
             hover_effects($('.contact'));
+            show_service_page();
+            show_online_record();
         }
 
         // Animation shit
@@ -28,7 +30,6 @@
         setTimeout(load_element, 2600, $('.vk'));
         setTimeout(load_element, 2900, $('.contact'));
         show_contacts();
-        show_online_record();
     });
 
     function hover_effects(elem){
@@ -38,13 +39,17 @@
                     $(this).addClass("opacity-1");
                     $(this).removeClass("opacity-05");
                 }
-                $(this).addClass("up-4");
+                else{
+                    $(this).addClass("up-4");
+                }
               }, function() {
                 if($(this)[0] === $('.back-gif')[0]){
                     $(this).removeClass( "opacity-1" );
                     $(this).addClass("opacity-05");
                 }
-                $(this).removeClass("up-4");
+                else{
+                    $(this).removeClass("up-4");
+                }
               }
         );
     }
@@ -92,13 +97,16 @@
     }
 
     function show_online_record(){
+        $('.choose').click(function(){
+            $('.service-desctop').fadeOut("slow");
+            $('.online-record').fadeIn("slow");
+        });
+    }
+
+    function show_service_page(){
         $('.back-gif').click(function(){
-            $('.big-button-right').addClass('tansit-1');
-            $('.online-record').addClass('tansit-1');
-            $('.big-button-right').addClass('opacity-0');
-            $('.big-button-right').addClass('hid');
-            $('.online-record').addClass('tansit-02');
-            $('.online-record').removeClass('hid');
+            $('.big-button-right').fadeOut("slow");
+            $('.service-desctop').fadeIn("slow");
         });
     }
 
@@ -107,10 +115,10 @@
     }
 
     function mobile_design(){
+        $('.registration-icon').removeClass('hid');
     }
 
     function desctop_design(){
-        $('.registration-icon').remove();
         $('.big-button-right').removeClass('hid');
         $('.main-content-left').removeClass('col-12');
         $('.main-content-left').addClass('col-4');

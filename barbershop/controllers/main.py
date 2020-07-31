@@ -9,4 +9,6 @@ class BarbershopController(Controller):
 
     @route('/', type='http', auth='public', website=True)
     def landing(self, **kw):
-        return request.render('barbershop.Main', {})
+        return request.render('barbershop.Main', {
+            'services': request.env['barbershop.service'].sudo().search([('active', '=', True)])
+        })

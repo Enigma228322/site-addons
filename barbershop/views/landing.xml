@@ -18,7 +18,7 @@
                         <img class="logo w-100 to-load v-hid" src="/barbershop/static/src/img/NR.png" draggable="false"/>
                     </div>
                     <div class="space w-100 h-50 align-items-center">
-                        <img class="registration-icon w-50 h-50 col-6" src="/barbershop/static/src/img/register.png"/>
+                        <img class="registration-icon w-50 h-50 col-6 hid" src="/barbershop/static/src/img/register.png"/>
                     </div>
                     <div class="info h-25">
                         <div class="media w-100 h-100 row align-items-center">
@@ -94,27 +94,31 @@
                             <label for="first-last-name">Выберите дату посещения:</label>
                             <input type="text" aria-label="Date" class="form-control"/>
                         </div>
-                        <!-- <div class="input-group mb-3 pd-top-15 col-12">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-default">Введите номер телефона</span>
-                            </div>
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                        </div>
-                        <div class="input-group mb-3 col-12">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-default">Введите дату и время</span>
-                            </div>
-                            <input type="text" placeholder="08 в 18:00" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                        </div> -->
-                        <button type="button" class="sign-up record-btn btn btn-secondary btn-lg">Записаться!</button>
+                        <button type="button" class="sign-up-mobile record-btn btn btn-secondary btn-lg">Записаться!</button>
                     </div>
                 </div>
                 <div class="service-mobile col-12 hid">
-                    <div class="service">
-                        <div class="service-img"/>
-                        <div class="service-description"/>
-                        <button type="button" class="choose record-btn btn btn-secondary btn-lg">Выбрать</button>
+                    <div class="service-img"/>
+                    <div class="service-description"/>
+                    <button type="button" class="choose-mobile record-btn btn btn-secondary btn-lg">Выбрать</button>
+                </div>
+                <div class="service-desctop col-8 hid">
+                    <div class="footer mx-auto h-25 border-bottom h-45px">
+                        <h2 class="label">Услуги</h2>
                     </div>
+                    <t t-foreach="services" t-as="service">
+                        <div class="service-block mx-auto col-6 h-35">
+                            <div class="service-img rounded-top h-30">
+                                <img class="rounded-top h-100 w-100" t-att-src="'data:image/png;base64,%s' % to_text(service.image)"/>
+                            </div>
+                            <div class="service-description border border-dark h-70 pd-5">
+                                <div class="service-name h-25 text-center"><t t-esc="service.name"/></div>
+                                <div class="service-block-description h-50 text-center"><t t-esc="service.description"/></div>
+                                <div class="service-price h-25 text-right rounded"><t t-esc="service.price"/> руб</div>
+                            </div>
+                        </div>
+                    </t>
+                    <button type="button" class="choose btn btn-secondary btn-lg">Выбрать</button>
                 </div>
             </div>
         </t>

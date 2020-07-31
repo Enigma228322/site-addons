@@ -20,7 +20,9 @@
     "depends": ['website'],
     "external_dependencies": {"python": [], "bin": []},
     "data": [
+        'security/ir.model.access.csv',
         'views/landing.xml',
+        'views/barbershop.xml',
         'views/assets.xml'
     ],
     "demo": [
