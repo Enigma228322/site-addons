@@ -3,7 +3,8 @@
  odoo.define('barbershop.model', function (require) {
     'use_strict';
 
-    var is_contacts_pressed = false;
+    var is_contacts_pressed = false,
+        choosen_service = new Set();
 
     $(document).ready(function() {
         // Adapting the design
@@ -30,6 +31,7 @@
         setTimeout(load_element, 2600, $('.vk'));
         setTimeout(load_element, 2900, $('.contact'));
         show_contacts();
+        get_choosen_service();
     });
 
     function hover_effects(elem){
@@ -137,4 +139,25 @@
             $('.service-mobile').fadeIn("slow");
         });
     }
+
+    function get_choosen_service(){
+        $('.service-block').click(function(){
+            if($(this).hasClass('choosen-service')){
+                $(this).removeClass('choosen-service');
+                // $($(this)[0].children[1].children[0]).text() - is service name
+                choosen_service.delete($($(this)[0].children[1].children[0]).text());
+            }
+            else{
+                $(this).addClass('choosen-service');
+                // $($(this)[0].children[1].children[0]).text() - is service name
+                choosen_service.add($($(this)[0].children[1].children[0]).text());
+            }
+        });
+    }
+
+    // RPC
+    // session.rpc('/', {
+    //     root: [app.innerText]
+    // }).then(function (result) {
+    // });
 });

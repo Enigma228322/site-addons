@@ -104,7 +104,7 @@
                 </div>
                 <div class="service-desctop col-8 hid">
                     <div class="footer mx-auto h-25 border-bottom h-45px">
-                        <h2 class="label">Услуги</h2>
+                        <h2 class="label">Выберите услуги</h2>
                     </div>
                     <t t-foreach="services" t-as="service">
                         <div class="service-block mx-auto col-6 h-35">

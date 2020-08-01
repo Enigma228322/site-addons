@@ -62,10 +62,14 @@
 .service-block{
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
 .service-name{
     font-size: 20px;
 }
+
 .service-img{
     background-color: #9696c7;
 }
@@ -143,6 +147,12 @@
 .h-70{
     height: 70% !important;
 }
+
+.choosen-service{
+    border: 5px solid #9696c7 !important;
+    border-top-left-radius: 0.65rem !important;
+    border-top-right-radius: 0.65rem !important;
+}
 //---------------------------------------------------------------
 // ------------------------ Mobile ------------------------------
 @media (max-width: 799px) {
@@ -173,9 +183,9 @@
         display: flex;
     }
     
-    @keyframes go-left-right {   /* назовём анимацию: "go-left-right" */
+    @keyframes go-left-right {
         from {
-          left: 0px;               /* от: left: 0px */
+          left: 0px;
         }
         to {
           left: calc(29%);
