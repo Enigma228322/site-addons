@@ -12,3 +12,20 @@ class BarbershopController(Controller):
         return request.render('barbershop.Main', {
             'services': request.env['barbershop.service'].sudo().search([('active', '=', True)])
         })
+
+    @route('/post_record', type='json', auth='public')
+    def get_record(self, **kw):
+        new_record = request.env['barbershop.record'].sudo().create({
+            'name': kw.get('name', 'No name'),
+            'sername': kw.get('sername', 'No sername'),
+            'phone_num': kw.get('phone', 'No phone number'),
+            'date': kw.get('date', 'No date')
+        })
+        if kw.get('service'):
+            for elem in request.env['barbershop.service'].sudo().search([]):
+                if elem.name in kw.get('service'):
+                    new_record.service += elem
+        return {
+            'status': 'Ok',
+            'price': new_record.price
+        }

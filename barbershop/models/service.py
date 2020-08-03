@@ -17,3 +17,4 @@ class Service(models.Model):
         string='Service image'
     )
     active = fields.Boolean(string="Active", default=True)
+    record = fields.Many2many('barbershop.record', string='Records')

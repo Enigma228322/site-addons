@@ -3,6 +3,8 @@
  odoo.define('barbershop.model', function (require) {
     'use_strict';
 
+    var session = require('web.session');
+
     var is_contacts_pressed = false,
         choosen_service = new Set();
 
@@ -12,10 +14,11 @@
             mobile_design();
             open_service_form();
             open_record_form();
+            register_new_user_mobile();
         }
         else{
             desctop_design();
-            setTimeout(load_elements, 1000);
+            setTimeout(load_elements, 500);
             hover_effects($('.back-gif'));
             hover_effects($('.telegram'));
             hover_effects($('.instagram'));
@@ -23,6 +26,7 @@
             hover_effects($('.contact'));
             show_service_page();
             show_online_record();
+            register_new_user();
         }
 
         // Animation shit
@@ -100,6 +104,7 @@
 
     function show_online_record(){
         $('.choose').click(function(){
+            $('.main-content-left').height($(window).height());
             $('.service-desctop').fadeOut("slow");
             $('.online-record').fadeIn("slow");
         });
@@ -109,6 +114,7 @@
         $('.back-gif').click(function(){
             $('.big-button-right').fadeOut("slow");
             $('.service-desctop').fadeIn("slow");
+            $('.main-content-left').height($(document).height() + $('.footer').height());
         });
     }
 
@@ -127,7 +133,7 @@
     }
 
     function open_record_form(){
-        $('.choose').click(function(){
+        $('.choose-mobile').click(function(){
             $('.service-mobile').fadeOut("slow");
             $('.online-record-mobile').fadeIn("slow");
         });
@@ -153,6 +159,64 @@
                 choosen_service.add($($(this)[0].children[1].children[0]).text());
             }
         });
+    }
+
+    function register_new_user(){
+        $('.sign-up').click(function(){
+            var name = $('.name-input')[0].value,
+                sername = $('.sername-input')[0].value,
+                phone = $('.phone-input')[0].value,
+                date = $('.date-input')[0].value;
+            var service = [];
+            for (let item of choosen_service.values()) service.push(item);
+            register_on_server(name, sername, phone, date, service);
+            go_to_waiting_room();
+        });
+    }
+
+    function register_new_user_mobile(){
+        $('.sign-up-mobile').click(function(){
+            var name = $('.name-input-mobile')[0].value,
+                sername = $('.sername-input-mobile')[0].value,
+                phone = $('.phone-input-mobile')[0].value,
+                date = $('.date-input-mobile')[0].value;
+            var service = [];
+            for (let item of choosen_service.values()) service.push(item);
+            register_on_server(name, sername, phone, date, service);
+            go_to_waiting_room_mobile();
+        });
+    }
+
+    function register_on_server(name, sername, phone, date, service){
+        // RPC
+        session.rpc('/post_record', {
+            name: name,
+            sername: sername,
+            phone: phone,
+            date: date,
+            service: service
+        }).then(function (result) {
+            console.log(result['status']);
+            $('.recording').fadeOut("slow");
+            $('.recorded').fadeIn("slow");
+            $('.recorded').text("Мы вас записали! Сумма к оплате составила " + result['price'] + " руб");
+        });
+    }
+
+    function go_to_waiting_room(){
+        $('.online-record').fadeOut("slow");
+        $('.waiting-room').fadeIn("slow");
+    }
+
+    function go_to_waiting_room_mobile(){
+        $('.online-record-mobile').fadeOut("slow");
+        $('.waiting-room-mobile').fadeIn("slow");
+        setTimeout(return_to_first_page, 5000);
+    }
+
+    function return_to_first_page(){
+        $('.waiting-room-mobile').fadeOut("slow");
+        $('.main-content-left').fadeIn("slow");
     }
 
     // RPC

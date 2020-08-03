@@ -48,7 +48,7 @@
                     <img class="back-gif h-100 w-100 to-load v-hid" src="/barbershop/static/src/img/cat.gif" draggable="false"/>
                 </div>
                 <!-- Registration page -->
-                <div class="online-record col-8 hid">
+                <div class="online-record col-8 hid h-100">
                     <div class="footer h-25 border-bottom h-45px">
                         <h2 class="label">Онлайн запись</h2>
                     </div>
@@ -57,20 +57,20 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Введите имя и фамилию</span>
                             </div>
-                            <input type="text" aria-label="First name" class="form-control"/>
-                            <input type="text" aria-label="Last name" class="form-control"/>
+                            <input type="text" aria-label="First name" class="form-control name-input"/>
+                            <input type="text" aria-label="Last name" class="form-control sername-input"/>
                         </div>
                         <div class="input-group mb-3 pd-top-15 col-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroup-sizing-default">Введите номер телефона</span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                            <input type="text" class="form-control phone-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
                         </div>
                         <div class="input-group mb-3 col-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroup-sizing-default">Введите дату и время</span>
                             </div>
-                            <input type="text" placeholder="08 в 18:00" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                            <input id="datetimepicker" type="text" placeholder="08 в 18:00" class="form-control date-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
                         </div>
                         <button type="button" class="sign-up btn btn-secondary btn-lg">Записаться!</button>
                     </div>
@@ -83,23 +83,36 @@
                     <div class="main-record-place">
                         <div class="pd-top-15 col-12">
                             <label for="first-last-name">Введите имя и фамилию:</label>
-                            <input type="text" aria-label="First name" class="form-control"/>
-                            <input type="text" aria-label="Last name" class="form-control"/>
+                            <input type="text" aria-label="First name" class="form-control name-input-mobile"/>
+                            <input type="text" aria-label="Last name" class="form-control sername-input-mobile"/>
                         </div>
                         <div class="pd-top-15 col-12">
                             <label for="first-last-name">Введите номер телефона для связи:</label>
-                            <input type="text" aria-label="Number" class="form-control"/>
+                            <input type="text" aria-label="Number" class="form-control phone-input-mobile"/>
                         </div>
                         <div class="pd-top-15 col-12">
                             <label for="first-last-name">Выберите дату посещения:</label>
-                            <input type="text" aria-label="Date" class="form-control"/>
+                            <input type="text" aria-label="Date" class="form-control date-input-mobile"/>
                         </div>
                         <button type="button" class="sign-up-mobile record-btn btn btn-secondary btn-lg">Записаться!</button>
                     </div>
                 </div>
                 <div class="service-mobile col-12 hid">
-                    <div class="service-img"/>
-                    <div class="service-description"/>
+                    <div class="footer h-25 border-bottom h-45px">
+                        <h2 class="label">Выберите услуги</h2>
+                    </div>
+                    <t t-foreach="services" t-as="service">
+                        <div class="service-block mx-auto col-9 h-35">
+                            <div class="service-img rounded-top h-30">
+                                <img class="rounded-top h-100 w-100" t-att-src="'data:image/png;base64,%s' % to_text(service.image)"/>
+                            </div>
+                            <div class="service-description border border-dark h-70 pd-5">
+                                <div class="service-name h-25 text-center"><t t-esc="service.name"/></div>
+                                <div class="service-block-description h-50 text-center"><t t-esc="service.description"/></div>
+                                <div class="service-price h-25 text-right rounded"><t t-esc="service.price"/> руб</div>
+                            </div>
+                        </div>
+                    </t>
                     <button type="button" class="choose-mobile record-btn btn btn-secondary btn-lg">Выбрать</button>
                 </div>
                 <div class="service-desctop col-8 hid">
@@ -119,6 +132,32 @@
                         </div>
                     </t>
                     <button type="button" class="choose btn btn-secondary btn-lg">Выбрать</button>
+                </div>
+
+                <div class="waiting-room col-8 hid">
+                    <div class="recording center-shit">
+                        <div class="d-flex justify-content-center">
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Записываем...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recorded center-shit hid">
+                        <div class="we-re-waiting d-flex justify-content-center"/>
+                    </div>
+                </div>
+
+                <div class="waiting-room-mobile col-12 hid">
+                    <div class="recording center-shit">
+                        <div class="d-flex justify-content-center">
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Записываем...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recorded center-shit hid">
+                        <div class="we-re-waiting d-flex justify-content-center"/>
+                    </div>
                 </div>
             </div>
         </t>
