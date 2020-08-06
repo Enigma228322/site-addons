@@ -9,6 +9,7 @@
         </xpath>
     </template>
     <template id="Main">
+        <title>На рахате</title>
         <t t-call="website.layout">
             <div class="main-shit">
                 <!-- Logo and info -->
