@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 2020 Vildan Safin <https://github.com/Enigma228322>
+    License AGPL-3.0 (https://www.gnu.org/licenses/lgpl.html).-->
+<odoo>
+    <template id="custom_layout" inherit_id="website.layout">
+        <xpath expr="//header[@id='top']" position="replace">
+        </xpath>
+        <xpath expr="//footer[@id='bottom']" position="replace">
+        </xpath>
+    </template>
+    <template id="Main">
+        <title>Курочка</title>
+            <t t-call="website.layout">
+                <div class="temp-main-cont h-100 container-fluid">
+                    <div id="navbar" class="d-flex align-items-center row align-self-start col-12 mg-left-0 temp-nav">
+                        <div class="text-nav text-center col">Меню</div>
+                        <div class="text-nav text-center col">Доставка</div>
+                        <div class="text-nav text-center col">Контакты</div>
+                        <div class="text-nav text-center col">Уфа</div>
+                        <div class="text-center col-3 main-text-logo">Матур Каз</div>
+                        <div class="text-nav text-center col">+7 999 623-47-28</div>
+                        <div class="text-nav text-center col">с 9:00 до 18:00</div>
+                        <div class="text-nav text-center col">
+                            <div>2</div>
+                            <div>1670 ₽</div>
+                        </div>
+                    </div>
+                    <div id="main-part" class="col-12 temp-main mg-left-0">
+                        <div class="center-shit">
+                            Centered element
+                        </div>
+                        <div class="contacts">
+                            <a class="social-media" href="https://www.instagram.com/petushara_diary/">
+                                <img class="social-media instagram v-hid" src="/chicken/static/src/img/instagram.png"/>
+                            </a>
+                            <a class="" href="https://t.me/welldone228/">
+                                <img class="social-media instagram v-hid" src="/chicken/static/src/img/telegram.png"/>
+                            </a>
+                            <a class="" href="https://vk.com/zaya_vokahksi/">
+                                <img class="social-media instagram v-hid" src="/chicken/static/src/img/vk.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </t>
+    </template>
+</odoo>
