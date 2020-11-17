@@ -3,10 +3,10 @@
    :alt: License: LGPL-3
 
 ===========
- Barbershop
+ Chicken shop
 ===========
 
-Module for Barbershop.
+Module for chicken shop.
 
 Credits
 =======
@@ -17,7 +17,7 @@ Contributors
 
 Sponsors
 --------
-* `"Na rahate" barbershop>`__
+* `Matur Kaz`__
 
 Maintainers
 -----------

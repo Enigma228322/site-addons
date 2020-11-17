@@ -2,11 +2,11 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 {
-    "name": """Barbershop""",
-    "summary": """Module for barbershop""",
+    "name": """Chicken""",
+    "summary": """Module for chicken shop""",
     "category": "Marketing",
     # "live_test_url": "http://apps.it-projects.info/shop/product/DEMO-URL?version=12.0",
-    # "images": ['/images/attention.jpg'],
+    "images": ['/chicken/static/description/icon.png'],
     "version": "13.0.1.0.0",
     "application": True,
 
@@ -17,13 +17,14 @@
     # "price": 10.00,
     # "currency": "EUR",
 
-    "depends": ['website'],
+    "depends": ['website', 'website_sale'],
     "external_dependencies": {"python": [], "bin": []},
     "data": [
         'security/ir.model.access.csv',
         'views/landing.xml',
-        'views/barbershop.xml',
-        'views/assets.xml'
+        'views/chicken.xml',
+        'views/assets.xml',
+        'data/demo_chicken.xml',
     ],
     "demo": [
     ],

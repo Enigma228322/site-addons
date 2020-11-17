@@ -1,0 +1,9 @@
+<!-- Copyright 2020 Vildan Safin <https://www.it-projects.info/team/Enigma228322>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).-->
+<odoo>
+    <record id="product_chicken_2kg" model="product.template">
+        <field name="name">Бройлер, 2 кг</field>
+        <field name="price">10</field>
+        <field file="chicken/static/src/img/chicken.png" name="image_1920" type="base64" />
+    </record>
+</odoo>

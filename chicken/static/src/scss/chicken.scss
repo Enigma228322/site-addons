@@ -1,0 +1,450 @@
+//------------------------------- Main --------------------------
+.main{
+    position: absolute;
+    height: 250%;
+}
+
+.bg-image-1{
+    background-image: url(/chicken/static/src/img/main-pic.png);
+    background-size: cover;
+}
+.bg-image-2{
+    background-image: url(/chicken/static/src/img/wood.png);
+    background-size: cover;
+}
+//---------------------------------------------------------------
+//----------------------------- 1 -------------------------------
+.text-nav{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    // white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+}
+.name-text-nav{
+    font-family: Muller;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+}
+.white{
+    color: #F3F3F3;
+}
+.num-busket{
+    /* Ellipse 2 */
+    background: #E63A3A;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: -13px;
+    left: 36px;
+    position: absolute;
+    z-index: 10;
+}
+.shp-bskt{
+    left: 20px !important;
+    width: 30px;
+    top: 0px;
+    left: 35px;
+    height: 30px;
+    position: absolute;
+}
+.shp-bskt:active {
+    transition-duration: 100ms;
+    transform: translateY(4px);
+}
+@media(max-width: 1366px){
+    .busket-price{
+        margin-left: 64% !important;
+        margin-top: 7px !important;
+    }
+}
+.sign-logo{
+    font-family: Muller;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 52px;
+}
+.sign-second{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    display: block;
+    line-height: 42px;
+    white-space: nowrap;
+}
+.mg-top{
+    margin-top: 9%;
+}
+@media(min-width: 1367px){   
+    .mg-top{
+        margin-top: 15%;
+    }
+}
+.rect{
+    width: 317px;
+    height: 158px;
+    padding: 5%;
+    background: #383838;
+}
+.rect-sign{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F3F3F3;
+}
+.rect-sign-muted{
+    color: #949494;
+}
+.plus-abs:active {
+    transition-duration: 100ms;
+    transform: translateY(4px);
+}
+.red-plus-pic{
+    width: 33px;
+    height: 33px;
+}
+.contacts{
+    position: absolute;
+    bottom: 14%;
+    width: 30px;
+    margin-left: 7%;
+}
+@media(max-width: 1366px){
+    .contacts{
+        position: absolute;
+        bottom: 5%;
+        left: 0%;
+        width: 30px;
+    }
+}
+.social{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.social:active {
+    transition-duration: 100ms;
+    transform: translateY(4px);
+}
+.order-button-text{
+    padding: 8%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.main-chicken{
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+}
+@media(max-width: 1366px){
+    .main-chicken{
+        width: 45%;
+    }
+}
+//---------------------------------------------------------------
+//----------------------------- 2 -------------------------------
+.kopch{
+    background-image: url(/chicken/static/src/img/kopch.png);
+    background-size: 100% 100%;
+}
+.kopch-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 164%;
+    line-height: 156%;
+    color: #FFFFFF;
+}
+.kopch-title{
+    font-family: Muller;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 270%;
+    line-height: 48px;
+    color: #FFB949;
+}
+.order-button{
+    width: 207px;
+    height: 64px;
+    background: #E63A3A;
+    box-shadow: 0px 0px 10px 1px #FE3A3A;
+    border-radius: 28px;
+}
+.order-button:active {
+    transition-duration: 100ms;
+    transform: translateY(4px);
+}
+.order-button:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 30px 1px #FE3A3A;
+}
+
+@media(min-width: 1367px){
+    .kopch-order-button{
+        margin-top: 5%;
+    }
+    .kopch-title{
+        font-size: 48px;
+        line-height: 48px;
+        margin-top: 8%;
+    }
+    .kopch-text{
+        font-size: 36px;
+        line-height: 42px;
+        margin-top: 5%;
+    }
+}
+//---------------------------------------------------------------
+
+//----------------------------- 3 -------------------------------
+
+.pool-1{
+    background-image: url(/chicken/static/src/img/pool1.png);
+    background-size: cover;
+}
+.pool-2{
+    background-image: url(/chicken/static/src/img/pool2.png);
+    background-size: cover;
+}
+.pool-3{
+    background-image: url(/chicken/static/src/img/pool3.png);
+    background-size: cover;
+}
+.pool-4{
+    background-image: url(/chicken/static/src/img/pool4.png);
+    background-size: cover;
+}
+.pool-5{
+    background-image: url(/chicken/static/src/img/pool5.png);
+    background-size: cover;
+}
+.pool-6{
+    background-image: url(/chicken/static/src/img/pool6.png);
+    background-size: cover;
+}
+.pool-7{
+    background-image: url(/chicken/static/src/img/pool7.png);
+    background-size: cover;
+}
+.pool-8{
+    background-image: url(/chicken/static/src/img/pool8.png);
+    background-size: cover;
+}
+.pool-item{    
+    border: 15px solid black;
+}
+.pool-item:hover {
+    .pool-text{
+        color: #FFB949;
+    }
+    border: 0px solid black;
+    transition: all 0.3s ease-in-out;
+}
+.pool-behind-block{
+    background: rgba(0, 0, 0, 0.4);
+}
+.pool-text {
+    font-family: Muller;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: auto;
+    font-size: 200%;
+    line-height: 52px;
+    margin-top: 40%;
+}
+@media(min-width: 1367px){
+    .pool-text{
+        font-size: 500%;
+        padding-bottom: 7%;
+        padding-top: 7%;
+    }
+}
+.pool-label{
+    width: 401px;
+    height: 52px;
+    font-family: Muller;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 52px;
+    color: #FFB949;
+}
+.palka{
+    width: 93px;
+    height: 0px;
+    border: 3px solid #FFB949;
+}
+//---------------------------------------------------------------
+
+//------------------------------- Help --------------------------
+.h-80{
+    height: 80% !important;
+}
+.h-60{
+    height: 60% !important;
+}
+.h-40{
+    height: 40% !important;
+}
+.h-33{
+    height: 33.3% !important;
+}
+.h-20{
+    height: 20% !important;
+}
+.h-10{
+    height: 10% !important;
+}
+.green{
+    background: green;
+}
+.mg-l-25{
+    margin-left: 25% !important;
+}
+.mg-r-25{
+    margin-right: 25% !important;
+}
+.mg-l-0{
+    margin-left: 0px;
+}
+.mg-t-10{
+    margin-top: 10%;
+}
+.pd-l-25{
+    padding-left: 25% !important;
+}
+.pd-r-25{
+    padding-right: 25% !important;
+}
+.pd-l-10{
+    padding-left: 10%;
+}
+.pd-r-10{
+    padding-right: 10%;
+}
+.pd-l-3{
+    padding-left: 3%;
+}
+.pd-r-3{
+    padding-right: 3%;
+}
+.pd-l-8em{
+    padding-left: 8em;
+}
+.pd-r-8em{
+    padding-right: 8em;
+}
+.top-15{
+    top: 15%;
+}
+.z-index-102{
+    z-index: 102;
+}
+.z-index-101{
+    z-index: 101;
+}
+.z-index-10{
+    z-index: 10;
+}
+.hid{
+    display: none;
+}
+//---------------------------------------------------------------
+//-------------------------- Poopup ------------------------------
+$primary: #E63A3A;
+$secondary: #FFB949;
+$white: #fff;
+$gray: #9b9b9b;
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+.pd-30{
+    padding: 30px;
+}
+.save{
+    margin-top: 6%;
+}
+.back-poopup{
+    background: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.poopup{
+    background: black;
+    opacity: 1;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    position: fixed;
+}
+//---------------------------------------------------------------

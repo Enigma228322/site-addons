@@ -11,34 +11,175 @@
     <template id="Main">
         <title>Курочка</title>
             <t t-call="website.layout">
-                <div class="temp-main-cont h-100 container-fluid">
-                    <div id="navbar" class="d-flex align-items-center row align-self-start col-12 mg-left-0 temp-nav">
-                        <div class="text-nav text-center col">Меню</div>
-                        <div class="text-nav text-center col">Доставка</div>
-                        <div class="text-nav text-center col">Контакты</div>
-                        <div class="text-nav text-center col">Уфа</div>
-                        <div class="text-center col-3 main-text-logo">Матур Каз</div>
-                        <div class="text-nav text-center col">+7 999 623-47-28</div>
-                        <div class="text-nav text-center col">с 9:00 до 18:00</div>
-                        <div class="text-nav text-center col">
-                            <div>2</div>
-                            <div>1670 ₽</div>
-                        </div>
-                    </div>
-                    <div id="main-part" class="col-12 temp-main mg-left-0">
-                        <div class="center-shit">
-                            Centered element
-                        </div>
-                        <div class="contacts">
-                            <a class="social-media" href="https://www.instagram.com/petushara_diary/">
-                                <img class="social-media instagram v-hid" src="/chicken/static/src/img/instagram.png"/>
-                            </a>
-                            <a class="" href="https://t.me/welldone228/">
-                                <img class="social-media instagram v-hid" src="/chicken/static/src/img/telegram.png"/>
-                            </a>
-                            <a class="" href="https://vk.com/zaya_vokahksi/">
-                                <img class="social-media instagram v-hid" src="/chicken/static/src/img/vk.png"/>
-                            </a>
+                <div class="main w-100">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <!-- 1 -->
+                            <div class="bg-image-1 col-12 h-40">
+                                <div class="row h-20 pd-l-3 pd-r-3 align-items-center">
+                                    <div class="white text-nav text-center col">О нас</div>
+                                    <div class="white text-nav text-center col">Доставка</div>
+                                    <div class="white text-nav text-center col">Контакты</div>
+                                    <div class="white text-nav text-center col">Уфа</div>
+                                    <div class="white name-text-nav text-center col-2">Матур Каз</div>
+                                    <div class="white text-nav text-center col">+7 999 623-47-28</div>
+                                    <div class="white text-nav text-center col">с 9:00 до 18:00</div>
+                                    <div class="white text-nav text-center col">
+                                        <div class="num-busket text-center">0</div>
+                                        <img draggable="false" class="shp-bskt" src="/chicken/static/src/img/basket.png"/>
+                                        <div class="busket-price">0 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="row h-80 pd-l-3 pd-r-3">
+                                    <img draggable="false" class="main-chicken" src="/chicken/static/src/img/chicken.png"/>
+                                    <div class="col-3">
+                                        <div class="contacts">
+                                            <a href="https://www.instagram.com/petushara_diary/">
+                                                <img draggable="false" class="social"
+                                                src="/chicken/static/src/img/instagram.png"/>
+                                            </a>
+                                            <a href="https://t.me/welldone228/">
+                                                <img draggable="false" class="social"
+                                                src="/chicken/static/src/img/facebook.png"/>
+                                            </a>
+                                            <a href="https://vk.com/zaya_vokahksi/">
+                                                <img draggable="false" class="social"
+                                                src="/chicken/static/src/img/vk.png"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-items-center">
+                                        <div class="row h-20"/>
+                                        <div class="row h-40">
+                                            <div class="col"/>
+                                            <div class="col">
+                                                <div class="white sign-logo font-weight-bold">Матур</div>
+                                                <div class="white sign-logo font-weight-bold">Каз</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="white sign-second
+                                                text-break text-left mg-top-11">Домашнее мясо</div>
+                                                <div class="white sign-second
+                                                text-break text-left mg-top-7">птицы с доставкой</div>
+                                                <div class="order order-button align-items-end mg-top">
+                                                    <p class="text-center order-button-text">Заказать</p>
+                                                </div>
+                                            </div>
+                                            <div class="col"/>
+                                        </div>
+                                        <div class="row h-40">
+                                            <div class="col"/>
+                                            <div class="col"/>
+                                            <div class="col top-15">
+                                                <div class="rect">
+                                                    <div class="rect-sign h-33">Бройлер домашний</div>
+                                                    <div class="rect-sign h-33">300 руб. за 100 г.</div>
+                                                    <div class="row h-33">
+                                                        <div class="rect-sign rect-sign-muted col-8">2 килограмма</div>
+                                                        <div class="col-4">
+                                                            <div class="plus-abs">
+                                                                <img draggable="false" class="red-plus-pic" src="/chicken/static/src/img/plus.png"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"/>
+                                </div>
+                            </div>
+                            <!-- Poopup -->
+                            <div class="back-poopup hid z-index-101"/>
+                            <div class="row poopup hid pd-30 z-index-102">
+                                <div class="col"/>
+                                <div class="col-10">
+                                    <div class="form__group field">
+                                        <input type="input" class="name_input form__field client-name"
+                                        placeholder="Имя" name="name" id='name'/>
+                                        <label for="name" class="form__label">Имя</label>
+                                    </div>
+                                    <div class="form__group field">
+                                        <input type="input" class="number_input form__field client-number"
+                                        placeholder="Номер" name="name" id='name'/>
+                                        <label for="name" class="form__label">Номер</label>
+                                    </div>
+                                    <div class="save order-button text-center mg-l-0">
+                                        <p class="text-center order-button-text">Сохранить</p>
+                                    </div>
+                                </div>
+                                <div class="col"/>
+                            </div>
+                            <!-- 2 -->
+                            <div class="bg-image-2 col-12 h-20">
+                                <div class="row h-10"></div>
+                                <div class="row h-80 mx-auto pd-l-10 pd-r-10">
+                                <div class="kopch col-4 h-100 mx-auto"/>
+                                <div class="col"/>
+                                <div class="col-7 h-100 mx-auto">
+                                    <div class="kopch-title text-left">Копчёности</div>
+                                    <div class="kopch-text text-left">
+                                        Мы подготовили для вас
+                                        копчёное мясо птицы,
+                                        заказывайте со скидкой
+                                        до 20% с 9:00 до 18:00
+                                        каждый день
+                                    </div>
+                                    <div class="order order-button text-center
+                                    kopch-order-button z-index-10">
+                                        <p class="text-center order-button-text">Заказать</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row h-10"></div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col-12 h-40" style="background: black">
+                                <div class="row h-25 pd-l-25 pd-r-25">
+                                    <div class="col-2 palka align-self-center"/>
+                                    <div class="col-8 pool-label text-center align-self-center">Ассортимент</div>
+                                    <div class="col-2 palka align-self-center"/>
+                                </div>
+                                    <div class="row h-75 pd-l-8em pd-r-8em">
+                                        <div class="row">
+                                            <div class="pool-item col-3 pool-1">
+                                                <div class="pool-behind-block pool-text
+                                                text-center">Бройлеры</div>
+                                            </div>
+                                            <div class="pool-item col-3 pool-2">
+                                                <div class="pool-behind-block pool-text
+                                                text-center">Утки</div>
+                                            </div>
+                                            <div class="pool-item col-3 pool-3">
+                                                <div class="pool-behind-block pool-text
+                                                text-center">Индоутки</div>
+                                            </div>
+                                            <div class="pool-item col-3 pool-4">
+                                                <div class="pool-behind-block pool-text
+                                                text-center">Курица</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pool-item col-3 pool-5">
+                                                <div class="pool-behind-block pool-text
+                                                text-center">Бройлеры</div>
+                                            </div>
+                                            <div class="pool-item col-3 pool-6">
+                                                <div class="pool-behind-block pool-text
+                                                text-center">Гуси</div>
+                                            </div>
+                                            <div class="pool-item col-3 pool-7">
+                                                <div class="pool-behind-block pool-text
+                                                text-center">Копчёное мясо</div>
+                                            </div>
+                                            <div class="pool-item col-3 pool-8">
+                                                <div class="pool-behind-block pool-text
+                                                text-center">Разное</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
