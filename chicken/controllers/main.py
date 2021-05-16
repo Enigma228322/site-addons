@@ -7,7 +7,7 @@ import urllib.parse
 
 class chickenController(Controller):
 
-    @route('/chicken', type='http', auth='public', website=True)
+    @route('/shop', type='http', auth='public', website=True)
     def landing(self, **kw):
         return request.render('chicken.Main', {
             'food': request.env['pizza.record'].sudo().search([])
