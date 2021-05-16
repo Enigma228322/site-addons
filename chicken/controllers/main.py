@@ -10,7 +10,7 @@ class chickenController(Controller):
     @route('/chicken', type='http', auth='public', website=True)
     def landing(self, **kw):
         return request.render('chicken.Main', {
-            # 'services': request.env['chicken.service'].sudo().search([('active', '=', True)])
+            'food': request.env['pizza.record'].sudo().search([])
         })
 
 class ChickenCart(WebsiteSale):

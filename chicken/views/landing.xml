@@ -17,77 +17,40 @@
                             <!-- 1 -->
                             <div class="bg-image-1 col-12 h-40">
                                 <div class="row h-20 pd-l-3 pd-r-3 align-items-center">
-                                    <div class="white text-nav text-center col">О нас</div>
-                                    <div class="white text-nav text-center col">Доставка</div>
-                                    <div class="white text-nav text-center col">Контакты</div>
-                                    <div class="white text-nav text-center col">Уфа</div>
-                                    <div class="white name-text-nav text-center col-2">Матур Каз</div>
-                                    <div class="white text-nav text-center col">+7 999 623-47-28</div>
-                                    <div class="white text-nav text-center col">с 9:00 до 18:00</div>
                                     <div class="white text-nav text-center col">
-                                        <div class="num-busket text-center">0</div>
+                                        <img draggable="false" src="/chicken/static/src/img/neft.png"/>
+                                    </div>
+                                    <div class="white text-nav text-center col">Наша история</div>
+                                    <div class="white text-nav text-center col">Акции</div>
+                                    <div class="white text-nav text-center col">Оплата/Доставка</div>
+                                    <div class="white name-text-nav text-center col-3">79996234728</div>
+                                    <div class="white text-nav text-center col">
+                                        <div class="row">
+                                            <img class="col-4 map" draggable="false" src="/chicken/static/src/img/icon-map.png"/>
+                                            <div class="col-8">Чернышевского 145</div>
+                                        </div>
+                                    </div>
+                                    <div class="white text-nav text-center col mg-l-7">
+                                        <div class="back-cart row">
+                                            <div class="col-3">
+                                                <img draggable="false" src="/chicken/static/src/img/basket.png"/>
+                                            </div>
+                                            <div class="col-3"/>
+                                            <div class="col-3 busket-price">0 ₽</div>
+                                        </div>
+                                        <!-- <div class="num-busket text-center">0</div>
                                         <img draggable="false" class="shp-bskt" src="/chicken/static/src/img/basket.png"/>
-                                        <div class="busket-price">0 ₽</div>
+                                        <div class="busket-price">0 ₽</div> -->
                                     </div>
                                 </div>
                                 <div class="row h-80 pd-l-3 pd-r-3">
-                                    <img draggable="false" class="main-chicken" src="/chicken/static/src/img/chicken.png"/>
-                                    <div class="col-3">
-                                        <div class="contacts">
-                                            <a href="https://www.instagram.com/petushara_diary/">
-                                                <img draggable="false" class="social"
-                                                src="/chicken/static/src/img/instagram.png"/>
-                                            </a>
-                                            <a href="https://t.me/welldone228/">
-                                                <img draggable="false" class="social"
-                                                src="/chicken/static/src/img/facebook.png"/>
-                                            </a>
-                                            <a href="https://vk.com/zaya_vokahksi/">
-                                                <img draggable="false" class="social"
-                                                src="/chicken/static/src/img/vk.png"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 align-items-center">
+                                    <div class="col-7">
                                         <div class="row h-20"/>
-                                        <div class="row h-40">
-                                            <div class="col"/>
-                                            <div class="col">
-                                                <div class="white sign-logo font-weight-bold">Матур</div>
-                                                <div class="white sign-logo font-weight-bold">Каз</div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="white sign-second
-                                                text-break text-left mg-top-11">Домашнее мясо</div>
-                                                <div class="white sign-second
-                                                text-break text-left mg-top-7">птицы с доставкой</div>
-                                                <div class="order order-button align-items-end mg-top">
-                                                    <p class="text-center order-button-text">Заказать</p>
-                                                </div>
-                                            </div>
-                                            <div class="col"/>
-                                        </div>
-                                        <div class="row h-40">
-                                            <div class="col"/>
-                                            <div class="col"/>
-                                            <div class="col top-15">
-                                                <div class="rect">
-                                                    <div class="rect-sign h-33">Бройлер домашний</div>
-                                                    <div class="rect-sign h-33">300 руб. за 100 г.</div>
-                                                    <div class="row h-33">
-                                                        <div class="rect-sign rect-sign-muted col-8">2 килограмма</div>
-                                                        <div class="col-4">
-                                                            <div class="plus-abs">
-                                                                <img draggable="false" class="red-plus-pic" src="/chicken/static/src/img/plus.png"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col"/>
+                                        <div class="row main-text h-80">
+                                            ИТАЛЬЯНСКАЯ ПИЦЦА НА ДРОВАХ
                                         </div>
                                     </div>
-                                    <div class="col-3"/>
+                                    <div class="col-5"/>
                                 </div>
                             </div>
                             <!-- Poopup -->
@@ -112,73 +75,350 @@
                                 <div class="col"/>
                             </div>
                             <!-- 2 -->
-                            <div class="bg-image-2 col-12 h-20">
-                                <div class="row h-10"></div>
-                                <div class="row h-80 mx-auto pd-l-10 pd-r-10">
-                                <div class="kopch col-4 h-100 mx-auto"/>
-                                <div class="col"/>
-                                <div class="col-7 h-100 mx-auto">
-                                    <div class="kopch-title text-left">Копчёности</div>
-                                    <div class="kopch-text text-left">
-                                        Мы подготовили для вас
-                                        копчёное мясо птицы,
-                                        заказывайте со скидкой
-                                        до 20% с 9:00 до 18:00
-                                        каждый день
+                            <div class="bg-image-2 col-12 h-40">
+                                <div class="h-20 col-12">
+                                    <div class="row h-50 align-items-center">
+                                        <div class="col-5"/>
+                                        <div class="col-2 text-center text-2">МЕНЮ</div>
+                                        <div class="col-5"/>
                                     </div>
-                                    <div class="order order-button text-center
-                                    kopch-order-button z-index-10">
-                                        <p class="text-center order-button-text">Заказать</p>
+                                    <div class="row h-50 pd-l-r-20">
+                                        <!-- <div class="choose-menu orange-back col-2"/> -->
+                                        <div class="choose-menu col-2">
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <img draggable="false" class="col-6 menu-pic mg-t-4" src="/chicken/static/src/img/slice.png"/>
+                                                <div class="col-3"/>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <div class="col-6 text-center">Пицца</div>
+                                                <div class="col-3"/>
+                                            </div>
+                                        </div>
+                                        <div class="col"/>
+                                        <div class="choose-menu col-2">
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <img draggable="false" class="col-6 menu-pic mg-t-4" src="/chicken/static/src/img/pasta.png"/>
+                                                <div class="col-3"/>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <div class="col-6 text-center">Паста</div>
+                                                <div class="col-3"/>
+                                            </div>
+                                        </div>
+                                        <div class="col"/>
+                                        <div class="choose-menu col-2">
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <img draggable="false" class="col-6 menu-pic mg-t-4" src="/chicken/static/src/img/hot.png"/>
+                                                <div class="col-3"/>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <div class="col-6 text-center">Горячее</div>
+                                                <div class="col-3"/>
+                                            </div>
+                                        </div>
+                                        <div class="col"/>
+                                        <div class="choose-menu col-2">
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <img draggable="false" class="col-6 menu-pic mg-t-4" src="/chicken/static/src/img/drink.png"/>
+                                                <div class="col-3"/>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <div class="col-6 text-center">Напитки</div>
+                                                <div class="col-3"/>
+                                            </div>
+                                        </div>
+                                        <div class="col"/>
+                                        <div class="choose-menu col-2">
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <img draggable="false" class="col-6 menu-pic mg-t-4" src="/chicken/static/src/img/salad.png"/>
+                                                <div class="col-3"/>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3"/>
+                                                <div class="col-6 text-center">Салат</div>
+                                                <div class="col-3"/>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row h-10"></div>
+                                <div class="row h-6"/>
+                                <div class="row h-37 pd-l-r-20">
+                                    <div class="pd-l-r-0 item-menu col-3 bg-image-2">
+                                        <div class="h-60 rounded-top" t-att-style="'background-image:url(data:image/png;base64,%s)' % to_text(food[0].image)"/>
+                                        <div class="h-40 rounded-bottom white-back">
+                                            <div class="h-33 row">
+                                                <div class="col-6"><t t-esc="food[0].name"/></div>
+                                                <div class="sub-text-2 orange col-6"><t t-esc="food[0].radius"/> | <t t-esc="food[0].price"/></div>
+                                            </div>
+                                            <div class="h-33">
+                                                <div class="struct-text"><t t-esc="food[0].structure"/></div>
+                                            </div>
+                                            <div class="h-33 align-items-center row">
+                                                <div class="col-1"/>
+                                                <div class="text-price col-5"><t t-esc="food[0].price"/></div>
+                                                <div class="add-button col-5 text-center">Добавить</div>
+                                                <div class="col-1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col"/>
+                                    <div class="pd-l-r-0 item-menu col-3 bg-image-2">
+                                        <div class="h-60 rounded-top" t-att-style="'background-image:url(data:image/png;base64,%s)' % to_text(food[1].image)"/>
+                                        <div class="h-40 rounded-bottom white-back">
+                                            <div class="h-33 row">
+                                                <div class="col-6"><t t-esc="food[1].name"/></div>
+                                                <div class="sub-text-2 orange col-6"><t t-esc="food[1].radius"/> | <t t-esc="food[1].price"/></div>
+                                            </div>
+                                            <div class="h-33">
+                                                <div class="struct-text"><t t-esc="food[1].structure"/></div>
+                                            </div>
+                                            <div class="h-33 align-items-center row">
+                                                <div class="col-1"/>
+                                                <div class="text-price col-5"><t t-esc="food[1].price"/></div>
+                                                <div class="add-button col-5 text-center">Добавить</div>
+                                                <div class="col-1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col"/>
+                                    <div class="pd-l-r-0 item-menu col-3 bg-image-2">
+                                        <div class="h-60 rounded-top" t-att-style="'background-image:url(data:image/png;base64,%s)' % to_text(food[2].image)"/>
+                                        <div class="h-40 rounded-bottom white-back">
+                                            <div class="h-33 row">
+                                                <div class="col-6"><t t-esc="food[2].name"/></div>
+                                                <div class="sub-text-2 orange col-6"><t t-esc="food[2].radius"/> | <t t-esc="food[2].price"/></div>
+                                            </div>
+                                            <div class="h-33">
+                                                <div class="struct-text"><t t-esc="food[2].structure"/></div>
+                                            </div>
+                                            <div class="h-33 align-items-center row">
+                                                <div class="col-1"/>
+                                                <div class="text-price col-5"><t t-esc="food[2].price"/></div>
+                                                <div class="add-button col-5 text-center">Добавить</div>
+                                                <div class="col-1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row h-37 pd-l-r-20">
+                                    <div class="pd-l-r-0 item-menu col-3 bg-image-2">
+                                        <div class="h-60 rounded-top" t-att-style="'background-image:url(data:image/png;base64,%s)' % to_text(food[3].image)"/>
+                                        <div class="h-40 rounded-bottom white-back">
+                                            <div class="h-33 row">
+                                                <div class="col-6"><t t-esc="food[3].name"/></div>
+                                                <div class="sub-text-2 orange col-6"><t t-esc="food[3].radius"/> | <t t-esc="food[3].price"/></div>
+                                            </div>
+                                            <div class="h-33">
+                                                <div class="struct-text"><t t-esc="food[3].structure"/></div>
+                                            </div>
+                                            <div class="h-33 align-items-center row">
+                                                <div class="col-1"/>
+                                                <div class="text-price col-5"><t t-esc="food[3].price"/></div>
+                                                <div class="add-button col-5 text-center">Добавить</div>
+                                                <div class="col-1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col"/>
+                                    <div class="pd-l-r-0 item-menu col-3 bg-image-2">
+                                        <div class="h-60 rounded-top" t-att-style="'background-image:url(data:image/png;base64,%s)' % to_text(food[4].image)"/>
+                                        <div class="h-40 rounded-bottom white-back">
+                                            <div class="h-33 row">
+                                                <div class="col-6"><t t-esc="food[4].name"/></div>
+                                                <div class="sub-text-2 orange col-6"><t t-esc="food[4].radius"/> | <t t-esc="food[4].price"/></div>
+                                            </div>
+                                            <div class="h-33">
+                                                <div class="struct-text"><t t-esc="food[4].structure"/></div>
+                                            </div>
+                                            <div class="h-33 align-items-center row">
+                                                <div class="col-1"/>
+                                                <div class="text-price col-5"><t t-esc="food[4].price"/></div>
+                                                <div class="add-button col-5 text-center">Добавить</div>
+                                                <div class="col-1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col"/>
+                                    <div class="pd-l-r-0 item-menu col-3 bg-image-2">
+                                        <div class="h-60 rounded-top" t-att-style="'background-image:url(data:image/png;base64,%s)' % to_text(food[5].image)"/>
+                                        <div class="h-40 rounded-bottom white-back">
+                                            <div class="h-33 row">
+                                                <div class="col-6"><t t-esc="food[5].name"/></div>
+                                                <div class="sub-text-2 orange col-6"><t t-esc="food[5].radius"/> | <t t-esc="food[5].price"/></div>
+                                            </div>
+                                            <div class="h-33">
+                                                <div class="struct-text"><t t-esc="food[5].structure"/></div>
+                                            </div>
+                                            <div class="h-33 align-items-center row">
+                                                <div class="col-1"/>
+                                                <div class="text-price col-5"><t t-esc="food[5].price"/></div>
+                                                <div class="add-button col-5 text-center">Добавить</div>
+                                                <div class="col-1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- 3 -->
-                            <div class="col-12 h-40" style="background: black">
-                                <div class="row h-25 pd-l-25 pd-r-25">
-                                    <div class="col-2 palka align-self-center"/>
-                                    <div class="col-8 pool-label text-center align-self-center">Ассортимент</div>
-                                    <div class="col-2 palka align-self-center"/>
+                            <div class="col-12 h-20" style="background: #1E1E1E">
+                                <div class="row h-50 align-items-center">
+                                    <div class="col-5"/>
+                                    <div class="col-2 text-center about-as FFF9F0">ПРО НАС</div>
+                                    <div class="col-5"/>
                                 </div>
-                                    <div class="row h-75 pd-l-8em pd-r-8em">
-                                        <div class="row">
-                                            <div class="pool-item col-3 pool-1">
-                                                <div class="pool-behind-block pool-text
-                                                text-center">Бройлеры</div>
-                                            </div>
-                                            <div class="pool-item col-3 pool-2">
-                                                <div class="pool-behind-block pool-text
-                                                text-center">Утки</div>
-                                            </div>
-                                            <div class="pool-item col-3 pool-3">
-                                                <div class="pool-behind-block pool-text
-                                                text-center">Индоутки</div>
-                                            </div>
-                                            <div class="pool-item col-3 pool-4">
-                                                <div class="pool-behind-block pool-text
-                                                text-center">Курица</div>
-                                            </div>
+                                <div class="h-50 align-items-center pd-l-r-10 row">
+                                    <div class="col-4 text-center">
+                                        <div class="text-3 FFF9F0">УНИКАЛЬНОСТЬ</div>
+                                        <div class="sub-text-3 FFF9F0">
+                                        Пицца приготовленная на дровах студентами нефтяного университета
                                         </div>
-                                        <div class="row">
-                                            <div class="pool-item col-3 pool-5">
-                                                <div class="pool-behind-block pool-text
-                                                text-center">Бройлеры</div>
-                                            </div>
-                                            <div class="pool-item col-3 pool-6">
-                                                <div class="pool-behind-block pool-text
-                                                text-center">Гуси</div>
-                                            </div>
-                                            <div class="pool-item col-3 pool-7">
-                                                <div class="pool-behind-block pool-text
-                                                text-center">Копчёное мясо</div>
-                                            </div>
-                                            <div class="pool-item col-3 pool-8">
-                                                <div class="pool-behind-block pool-text
-                                                text-center">Разное</div>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <div class="text-3 FFF9F0">ТЕХНОЛОГИИ</div>
+                                        <div class="sub-text-3 FFF9F0">
+                                        Мы готовим пиццу по старым рецептам и технологиям взятых с Италии
+                                        </div>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <div class="text-3 FFF9F0">ВКУС</div>
+                                        <div class="sub-text-3 FFF9F0">
+                                        Наши блюда имеют неповторимый вкус, мы любим своё дело
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="col-12 h-40" style="background: #FFF9F0">
+                                <div class="h-10"/>
+                                <div class="h-45 align-items-center pd-l-r-10 row">
+                                    <div class="col-6 text-left">
+                                        <div class="text-4">ИСТОРИЯ</div>
+                                        <div class="sub-text-4">
+                                            Пиццерия открылась в Уфе в 12 корпусе уфимского государственного нефтяного технического университета, неподалеку от столовой. Студенты очень любили свой университет, и после выпуска было решено открыть уникальную пиццерию. 
+                                        </div>
+                                        <div class="sub-text-4">
+                                            Сейчас у пиццерии NEFT есть филиал в каждом учебном корпусе УГНТУ. В будущем сеть будет расширяться и на другие высшие учебные заведения.
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="pics-4 mg-l-150" draggable="false" src="/chicken/static/src/img/building.png"/>
+                                    </div>
+                                </div>
+                                <div class="h-45 align-items-center pd-l-r-10 row">
+                                    <div class="col-6">
+                                        <img class="pics-4" draggable="false" src="/chicken/static/src/img/pizza-maker.png"/>
+                                    </div>
+                                    <div class="col-6"/>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="col-12 h-40" style="background: #1E1E1E">
+                                <div class="h-80 row">
+                                    <div class="col-6 bg-image-map"/>
+                                    <div class="col-6">
+                                        <div class="h-10"/>
+                                        <div class="h-90 row">
+                                            <div class="col-2"/>
+                                            <div class="col-10">
+                                                <div class="h-10 text-5 FFF9F0">ДОСТАВКА</div>
+                                                <div class="h-90 sub-text-5 FFF9F0">
+                                                    <div class="h-8"/>
+                                                    <div class="h-17 row">
+                                                        <div class="col-2">
+                                                            <img class="pics-5" draggable="false" src="/chicken/static/src/img/percentage.png"/>
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div>Скидка 10% каждому студенту Уфы,</div>
+                                                            <div>скидки 20% нефтяного университета</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="h-2"/>
+                                                    <div class="h-17 row">
+                                                        <div class="col-2">
+                                                            <img class="pics-5" draggable="false" src="/chicken/static/src/img/clock.png"/>
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div>Доставка менее чем за 60 минут, или</div>
+                                                            <div>пицца бесплатно</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="h-2"/>
+                                                    <div class="h-17 row">
+                                                        <div class="col-2">
+                                                            <img class="pics-5" draggable="false" src="/chicken/static/src/img/percentage.png"/>
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div>Скидка 10% каждому студенту Уфы,</div>
+                                                            <div>скидки 20% нефтяного университета</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="h-2"/>
+                                                    <div class="h-17 row">
+                                                        <div class="col-2">
+                                                            <img class="pics-5" draggable="false" src="/chicken/static/src/img/clock.png"/>
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div>Доставка менее чем за 60 минут, или</div>
+                                                            <div>пицца бесплатно</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="h-2"/>
+                                                    <div class="h-17 row">
+                                                        <div class="col-2">
+                                                            <img class="pics-5" draggable="false" src="/chicken/static/src/img/percentage.png"/>
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div>Скидка 10% каждому студенту Уфы,</div>
+                                                            <div>скидки 20% нефтяного университета</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="h-20 row pd-l-r-10">
+                                    <div class="h-20 col-12"/>
+                                    <div class="h-70 row col-12">
+                                        <div class="col-3 row align-items-center">
+                                            <a class="col-3" draggable="false" href="https://vk.com/zaya_vokahksi/">
+                                                <img class="social" draggable="false" src="/chicken/static/src/img/vk.png"/>
+                                            </a>
+                                            <a class="col-3" draggable="false" href="https://www.instagram.com/zaya_vokahksi/">
+                                                <img class="social" draggable="false" src="/chicken/static/src/img/instagram.png"/>
+                                            </a>
+                                            <a class="col-3" draggable="false" href="https://t.me/zaya_vokahksi">
+                                                <img class="social" draggable="false" src="/chicken/static/src/img/telegram.png"/>
+                                            </a>
+                                        </div>
+                                        <div class="col-3 row align-items-center sub-text-5-1 FFF9F0">
+                                            <div class="col-12">Про ресторан</div>
+                                            <div class="col-12">Доставка/оплата</div>
+                                            <div class="col-12">История</div>
+                                            <div class="col-12">Акции</div>
+                                        </div>
+                                        <div class="col-3 row align-items-center sub-text-5-1 FFF9F0">
+                                            <div class="col-12">Регистрация</div>
+                                            <div class="col-12">Вакансии</div>
+                                            <div class="col-12">Контакты</div>
+                                        </div>
+                                        <div class="col-3 align-items-center sub-text-5-1 FFF9F0">
+                                            <div class="col-12">Франшиза</div>
+                                            <div class="col-12">Оферта</div>
+                                            <div class="col-12">Для партнёров</div>
+                                        </div>
+                                    </div>
+                                    <div class="h-10 col-12"/>
+                                </div>
                             </div>
                         </div>
                     </div>

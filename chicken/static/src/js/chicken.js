@@ -34,7 +34,7 @@ odoo.define('chicken.model', function (require) {
             $('div.back-poopup').fadeOut("slow");
             $('div.poopup').fadeOut("slow");
         })
-        $('img.shp-bskt').click(function () {
+        $('div.back-cart').click(function () {
             window.location.href = "/shop/cart";
         })
         $('div.save').click(function () {
@@ -54,6 +54,11 @@ odoo.define('chicken.model', function (require) {
         });
         $('div.pool-item').mouseleave(function(){
             $('div.pool-item').css({'opacity': '1'});
+        });
+
+        $('div.choose-menu').click(function() {
+            $('div.choose-menu').removeClass("orange-back");
+            $(this).addClass("orange-back");
         });
     });
 });

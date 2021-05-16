@@ -5,12 +5,11 @@
 }
 
 .bg-image-1{
-    background-image: url(/chicken/static/src/img/main-pic.png);
+    background-image: url(/chicken/static/src/img/main-pic-pizza.png);
     background-size: cover;
 }
 .bg-image-2{
-    background-image: url(/chicken/static/src/img/wood.png);
-    background-size: cover;
+    background-color: #E5E5E5;
 }
 //---------------------------------------------------------------
 //----------------------------- 1 -------------------------------
@@ -32,6 +31,9 @@
 .white{
     color: #F3F3F3;
 }
+.map{
+    height: 30px;
+}
 .num-busket{
     /* Ellipse 2 */
     background: #E63A3A;
@@ -43,23 +45,31 @@
     position: absolute;
     z-index: 10;
 }
-.shp-bskt{
-    left: 20px !important;
-    width: 30px;
-    top: 0px;
-    left: 35px;
-    height: 30px;
-    position: absolute;
+.back-cart{
+    padding: 10px;
+    background: #CC7700;
+    width: 153px;
+    height: 64px;
+    border-radius: 15%;
 }
-.shp-bskt:active {
+.back-cart:active {
     transition-duration: 100ms;
     transform: translateY(4px);
+}
+.busket-price{
+    margin-top: 10px;
 }
 @media(max-width: 1366px){
     .busket-price{
         margin-left: 64% !important;
         margin-top: 7px !important;
+        margin-top: 10px;
     }
+}
+.main-text{
+    color: white;
+    margin-left: 19%;
+    font-size: 64px;
 }
 .sign-logo{
     font-family: Muller;
@@ -153,6 +163,35 @@
 }
 //---------------------------------------------------------------
 //----------------------------- 2 -------------------------------
+.choose-menu{
+    background-color: white;
+    height: 64px;
+    border-radius: 20px;
+}
+.item-menu{
+    height: 90%;
+}
+.white-back{
+    background-color: white;
+}
+.sub-text-2{
+    font-size: 18px;
+}
+.struct-text{
+    font-size: 10px;
+}
+.text-price{
+    font-size: 18px;
+}
+.add-button{
+    font-size: 16px;
+    background-color: #CC7700;
+    border-radius: 10%;
+}
+.orange{
+    color: #CC7700;
+}
+
 .kopch{
     background-image: url(/chicken/static/src/img/kopch.png);
     background-size: 100% 100%;
@@ -203,6 +242,13 @@
         line-height: 42px;
         margin-top: 5%;
     }
+}
+
+.menu-pic{
+    height: 40px;
+}
+.text-2{
+    font-size: 42px;
 }
 //---------------------------------------------------------------
 
@@ -285,14 +331,67 @@
     height: 0px;
     border: 3px solid #FFB949;
 }
+.FFF9F0{
+    color: #FFF9F0;
+}
+.about-as{
+    font-size: 64px;
+}
+.text-3{
+    font-size: 36px;
+}
+.sub-text-3{
+    font-size: 24px;
+}
+//---------------------------------------------------------------
+
+//----------------------------- 4 -------------------------------
+.text-4{
+    font-size: 36px;
+}
+.sub-text-4{
+    font-size: 24px;
+}
+.pics-4{
+    width: 500px;
+}
+//---------------------------------------------------------------
+
+//----------------------------- 5 -------------------------------
+.bg-image-map{
+    background-image: url(/chicken/static/src/img/map.png);
+    background-size: cover;
+}
+.text-5{
+    font-size: 36px;
+}
+.sub-text-5{
+    font-size: 24px;
+}
+.sub-text-5-1{
+    font-size: 18px;
+}
+.social{
+    height: 40px;
+}
+.social:active {
+    transition-duration: 100ms;
+    transform: translateY(4px);
+}
 //---------------------------------------------------------------
 
 //------------------------------- Help --------------------------
 .h-80{
     height: 80% !important;
 }
+.h-70{
+    height: 60% !important;
+}
 .h-60{
     height: 60% !important;
+}
+.h-45{
+    height: 45% !important;
 }
 .h-40{
     height: 40% !important;
@@ -300,14 +399,32 @@
 .h-33{
     height: 33.3% !important;
 }
+.h-37{
+    height: 37% !important;
+}
 .h-20{
     height: 20% !important;
+}
+.h-17{
+    height: 17% !important;
 }
 .h-10{
     height: 10% !important;
 }
+.h-8{
+    height: 8% !important;
+}
+.h-6{
+    height: 6% !important;
+}
+.h-2{
+    height: 2% !important;
+}
 .green{
     background: green;
+}
+.mg-l-150{
+    margin-left: 150px !important;
 }
 .mg-l-25{
     margin-left: 25% !important;
@@ -315,11 +432,20 @@
 .mg-r-25{
     margin-right: 25% !important;
 }
+.mg-l-7{
+    margin-left: 7%;
+}
 .mg-l-0{
     margin-left: 0px;
 }
+.mg-t-20p{
+    margin-top: 20px;
+}
 .mg-t-10{
     margin-top: 10%;
+}
+.mg-t-4{
+    margin-top: 4px;
 }
 .pd-l-25{
     padding-left: 25% !important;
@@ -345,6 +471,18 @@
 .pd-r-8em{
     padding-right: 8em;
 }
+.pd-l-r-20{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.pd-l-r-10{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.pd-l-r-0{
+    padding-left: 0%;
+    padding-right: 0%;
+}
 .top-15{
     top: 15%;
 }
@@ -359,6 +497,19 @@
 }
 .hid{
     display: none;
+}
+.orange-back{
+    background-color: #CC7700;
+    transition: 0.4s;
+}
+.text-center{
+    text-align: center;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
 }
 //---------------------------------------------------------------
 //-------------------------- Poopup ------------------------------

@@ -4,26 +4,31 @@
 <odoo>
     <!-- Record tree form -->
     <record id="website_record_tree_view" model="ir.ui.view">
-        <field name="name">chicken.record.list</field>
-        <field name="model">chicken.record</field>
+        <field name="name">pizza.record.list</field>
+        <field name="model">pizza.record</field>
         <field name="arch" type="xml">
             <tree string="Record">
                 <field name="name"/>
-                <field name="phone_num"/>
+                <field name="price"/>
             </tree>
         </field>
     </record>
 
     <!-- Record form view -->
     <record id="record_form_view" model="ir.ui.view">
-        <field name="name">chicken.record.form.view</field>
-        <field name="model">chicken.record</field>
+        <field name="name">pizza.record.form.view</field>
+        <field name="model">pizza.record</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <field name="image" widget="image" class="oe_avatar o_field_image"/>
                     <group>
                         <field name="name"/>
-                        <field name="phone_num"/>
+                        <field name="radius"/>
+                        <field name="weight"/>
+                        <field name="structure"/>
+                        <field name="price"/>
+                        <field name="product_type"/>
                     </group>
                 </sheet>
             </form>
@@ -32,7 +37,7 @@
 
     <record id="action_record" model="ir.actions.act_window">
         <field name="name">Records</field>
-        <field name="res_model">chicken.record</field>
+        <field name="res_model">pizza.record</field>
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="website_record_tree_view"/>
         <field name="target">current</field>
